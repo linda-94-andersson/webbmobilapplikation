@@ -37,3 +37,12 @@ function isBetween(x, f, t) {
 }
 
 isBetween(4, 1, 10);
+
+// Concatenate lists
+
+function concatenate(a, b) {
+    const concat = a.concat(b);
+    console.log(concat, " Concatenate");
+}
+
+concatenate([1, 2, 3], [4, 5, 6]);
