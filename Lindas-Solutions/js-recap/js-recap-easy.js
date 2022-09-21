@@ -46,3 +46,14 @@ function concatenate(a, b) {
 }
 
 concatenate([1, 2, 3], [4, 5, 6]);
+
+// Contains
+
+function contains(a,b) {
+    const c = a.includes(b); 
+    console.log(c, " Contains"); 
+}
+
+contains([1, 2, 3], 3);
+contains(["parakeet", "raven", "barn owl"], "raven");
+contains(["nuggets", "fries", "cola"], "Vitamin C");
