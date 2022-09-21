@@ -3,10 +3,23 @@
 const object = { name: "LA", age: 29 }
 
 function logAge(o) {
-    if (o.age) return console.log(o.age);
+    if (o.age) return console.log(o.age, " Age");
     return console.log("No age data");
 }
 
-console.log(logAge(object));
+logAge(object);
 
 // Ages
+
+const person1 = { name: "Ryan", age: 41 };
+const person2 = { name: "Carl", age: 19 };
+const person3 = { name: "Stevie" };
+const personArray = [person1, person2, person3];
+
+function getAges(p) {
+    const ages = p.filter(p => p.age).map(p => p.age);
+    if (ages) return console.log(ages, " Ages");
+    return console.log("No ages data");
+}
+
+getAges(personArray); 
