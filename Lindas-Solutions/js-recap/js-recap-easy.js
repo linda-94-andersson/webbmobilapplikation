@@ -22,4 +22,18 @@ function getAges(p) {
     return console.log("No ages data");
 }
 
-getAges(personArray); 
+getAges(personArray);
+
+// Between
+
+function isBetween(x, f, t) {
+    if (x < f) {
+        return;
+    } else if (x > t) {
+        return;
+    } else {
+        console.log(x, " Between");
+    }
+}
+
+isBetween(4, 1, 10);
