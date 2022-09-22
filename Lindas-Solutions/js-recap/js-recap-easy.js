@@ -106,3 +106,21 @@ function sum(arr) {
 
 sum([6, 8]);
 sum([2, 3, 4, 5]);
+
+// Triangel
+
+function triangel() {
+    for (let i = 0; i < 7; i++) {
+        switch (i % 7) {
+            case 0: console.log("#"); break;
+            case 1: console.log("##"); break;
+            case 2: console.log("###"); break;
+            case 3: console.log("####"); break;
+            case 4: console.log("#####"); break;
+            case 5: console.log("######"); break;
+            case 6: console.log("#######"); break;
+        }
+    }
+}
+
+triangel();
