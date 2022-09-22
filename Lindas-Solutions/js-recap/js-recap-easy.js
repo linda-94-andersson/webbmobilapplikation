@@ -124,3 +124,13 @@ function triangel() {
 }
 
 triangel();
+
+// Word count
+
+function wordCount(w){
+    const word = w.match(/(\w+)/g).length; 
+    console.log(word, " Word count"); 
+}
+
+wordCount("Hello World!");
+wordCount("Good day, good sir!");  
