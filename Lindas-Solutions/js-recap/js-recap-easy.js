@@ -81,4 +81,15 @@ function oddArray(o) {
 }
 
 oddArray([2, 3, 4, 5, 6, 7, 8]);
-oddArray(["Easy", "Peasy", "Lemon", "Squeezy"]); 
+oddArray(["Easy", "Peasy", "Lemon", "Squeezy"]);
+
+// Round
+
+function round(r) {
+    const rounded = Math.round(r);
+    console.log(rounded, " Round");
+}
+
+round(1.5);
+round(1.1);
+round(1.7); 
