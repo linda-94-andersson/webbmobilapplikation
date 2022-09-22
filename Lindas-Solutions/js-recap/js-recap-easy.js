@@ -92,4 +92,17 @@ function round(r) {
 
 round(1.5);
 round(1.1);
-round(1.7); 
+round(1.7);
+
+// Sum
+
+function sum(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return console.log(sum, " Sum");
+}
+
+sum([6, 8]);
+sum([2, 3, 4, 5]);
