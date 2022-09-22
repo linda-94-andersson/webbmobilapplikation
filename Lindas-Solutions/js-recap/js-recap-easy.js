@@ -49,11 +49,24 @@ concatenate([1, 2, 3], [4, 5, 6]);
 
 // Contains
 
-function contains(a,b) {
-    const c = a.includes(b); 
-    console.log(c, " Contains"); 
+function contains(a, b) {
+    const c = a.includes(b);
+    console.log(c, " Contains");
 }
 
 contains([1, 2, 3], 3);
 contains(["parakeet", "raven", "barn owl"], "raven");
 contains(["nuggets", "fries", "cola"], "Vitamin C");
+
+// First
+
+function first(f) {
+    console.log(f[0], " First");
+}
+
+function last(l) {
+    console.log(l[2], " Last");
+}
+
+first([6, 4, 7])
+last([6, 4, 7])
