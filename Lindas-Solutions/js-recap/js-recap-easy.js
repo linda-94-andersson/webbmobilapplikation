@@ -70,3 +70,15 @@ function last(l) {
 
 first([6, 4, 7])
 last([6, 4, 7])
+
+// Max Odd array
+
+function oddArray(o) {
+    const odd = o.filter((element, index) => {
+        return index % 2 === 0;
+    });
+    console.log(odd, " Max Odd array");
+}
+
+oddArray([2, 3, 4, 5, 6, 7, 8]);
+oddArray(["Easy", "Peasy", "Lemon", "Squeezy"]); 
