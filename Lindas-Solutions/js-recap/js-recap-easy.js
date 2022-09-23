@@ -65,7 +65,7 @@ function first(f) {
 }
 
 function last(l) {
-    console.log(l[2], " Last");
+    console.log(l.at(-1), " Last");
 }
 
 first([6, 4, 7])
