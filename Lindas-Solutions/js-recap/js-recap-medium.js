@@ -55,13 +55,34 @@ function calculator(c) {
 calculator("2 + 2");
 calculator("2 - 2");
 calculator("2 * 2");
-calculator("2 / 2"); 
+calculator("2 / 2");
 
 // Compact
 
-function compact(a){
+function compact(a) {
     const comp = a.filter(Boolean);
-    console.log(comp, " compact"); 
+    console.log(comp, " compact");
 }
 
-compact([0, 7, "", false, true, "good day"]); 
+compact([0, 7, "", false, true, "good day"]);
+
+// Fizzbuzz
+
+function fizzbuzz() {
+    for (var i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log(i + " FizzBuzz");
+        }
+        else if (i % 3 === 0) {
+            console.log(i + " Fizz");
+        }
+        else if (i % 5 === 0) {
+            console.log(i + " Buzz");
+        }
+        else {
+            console.log(i);
+        }
+    }
+}
+
+fizzbuzz(); 
