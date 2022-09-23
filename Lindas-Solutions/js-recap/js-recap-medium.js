@@ -27,3 +27,32 @@ function alternate(a, b) {
 }
 
 alternate(["x", "y", "z"], [9, 8, 7]);
+
+// Calculator
+
+function calculator(c) {
+    const operator = c[2];
+    const str1 = c[0];
+    const str2 = c[4];
+    const num1 = parseInt(str1);
+    const num2 = parseInt(str2);
+
+    let result;
+
+    if (operator === "+") {
+        result = num1 + num2;
+    } else if (operator === "-") {
+        result = num1 - num2;
+    } else if (operator === "*") {
+        result = num1 * num2;
+    } else {
+        result = num1 / num2;
+    }
+
+    console.log(result, " calculator");
+}
+
+calculator("2 + 2");
+calculator("2 - 2");
+calculator("2 * 2");
+calculator("2 / 2"); 
