@@ -56,3 +56,12 @@ calculator("2 + 2");
 calculator("2 - 2");
 calculator("2 * 2");
 calculator("2 / 2"); 
+
+// Compact
+
+function compact(a){
+    const comp = a.filter(Boolean);
+    console.log(comp, " compact"); 
+}
+
+compact([0, 7, "", false, true, "good day"]); 
