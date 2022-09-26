@@ -247,4 +247,16 @@ function palindrome(str) {
 }
 
 palindrome("Greetings");
-palindrome("ALLA"); 
+palindrome("ALLA");
+
+// Powers
+
+function powers(arr, n) {
+    const power = arr.map(function (x) {
+        return Math.pow(x, n);
+    });
+    console.log(power, " Powers");
+}
+
+powers([2, 3, 4], 2);
+powers([1, 2, 3], 3); 
