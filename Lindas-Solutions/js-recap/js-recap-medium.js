@@ -236,3 +236,15 @@ min(2, 3);
 minimum([6, 4, 3, 8]);
 max(2, 3);
 maximum([6, 4, 3, 8]);
+
+// Palindrome
+
+function palindrome(str) {
+    var re = /[\W_]/g;
+    var lowRegStr = str.toLowerCase().replace(re, '');
+    var reverseStr = lowRegStr.split('').reverse().join('');
+    return console.log(reverseStr === lowRegStr, " Palindrome");
+}
+
+palindrome("Greetings");
+palindrome("ALLA"); 
