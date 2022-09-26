@@ -103,4 +103,19 @@ function hamming(a, b) {
 }
 
 hamming("ZZZ", "ZZX");
-hamming("Måsen", "Moset"); 
+hamming("Måsen", "Moset");
+
+// Head
+
+function head(arr, n) {
+    const h = arr.slice(0, n);
+    console.log(h, " Head");
+}
+
+function tail(arr, n) {
+    const t = arr.slice(n);
+    console.log(t, " Tail");
+}
+
+head([6, 7, 8, 10, 11, 5], 4);
+tail([6, 7, 8, 10, 11, 5], 3); 
