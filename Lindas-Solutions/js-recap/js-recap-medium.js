@@ -203,3 +203,36 @@ function longestWord(string) {
 }
 
 longestWord("Greetings mr bond");
+
+// Minium
+
+function min(a, b) {
+    if (a < b) {
+        console.log(a, " Min");
+    } else {
+        console.log(b, " Min");
+    }
+}
+
+function minimum(arr) {
+    const min = arr.reduce((a, b) => Math.min(a, b));
+    console.log(min, " Minimum");
+}
+
+function max(a, b) {
+    if (a > b) {
+        console.log(a, " Max");
+    } else {
+        console.log(b, " Max");
+    }
+}
+
+function maximum(arr) {
+    const max = arr.reduce((a, b) => Math.max(a, b));
+    console.log(max, " Maximum");
+}
+
+min(2, 3);
+minimum([6, 4, 3, 8]);
+max(2, 3);
+maximum([6, 4, 3, 8]);
