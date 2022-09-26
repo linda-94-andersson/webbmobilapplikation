@@ -124,7 +124,16 @@ tail([6, 7, 8, 10, 11, 5], 3);
 
 function initial(arr) {
     const ini = arr.slice(0, -1);
-    console.log(ini, " Initial"); 
+    console.log(ini, " Initial");
 }
 
-initial([6, 7, 8, 9]); 
+initial([6, 7, 8, 9]);
+
+// Intersect
+
+function intersect(a, b) {
+    const int = a.filter(value => b.includes(value));
+    console.log(int, " Intersect");
+}
+
+intersect([2, 3, 4, 5, 6], [2, 6, 1, 8]);
