@@ -85,4 +85,22 @@ function fizzbuzz() {
     }
 }
 
-fizzbuzz(); 
+// fizzbuzz(); 
+
+// Hamming distance
+
+function hamming(a, b) {
+    let distance = 0;
+    if (a.length === b.length) {
+        for (let i = 0; i < a.length; i++) {
+            if (a[i].toLowerCase() != b[i].toLowerCase()) {
+                distance++
+            }
+        }
+        return console.log(distance, " Hamming");
+    };
+    return 0;
+}
+
+hamming("ZZZ", "ZZX");
+hamming("Måsen", "Moset"); 
