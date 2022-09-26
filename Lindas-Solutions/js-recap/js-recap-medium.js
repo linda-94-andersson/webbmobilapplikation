@@ -137,3 +137,15 @@ function intersect(a, b) {
 }
 
 intersect([2, 3, 4, 5, 6], [2, 6, 1, 8]);
+
+// Leap year
+
+function leap(y) {
+    if ((0 == y % 4) && (0 != y % 100) || (0 == y % 400)) {
+        return console.log(true, " Leap");
+    }
+    return console.log(false, " Leap");
+}
+
+leap(2012);
+leap(2015); 
