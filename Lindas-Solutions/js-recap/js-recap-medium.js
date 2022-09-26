@@ -148,4 +148,41 @@ function leap(y) {
 }
 
 leap(2012);
-leap(2015); 
+leap(2015);
+
+// Letter-case
+
+function toCamelCase(s) {
+    const camel = s.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+
+    console.log(camel, " toCamelCas");
+}
+
+toCamelCase("Good day");
+
+function toSnakeCase(s) {
+    const snake = s.replace(/\W+/g, " ")
+        .split(/ |\B(?=[A-Z])/)
+        .map(word => word.toLowerCase())
+        .join('_');
+
+    console.log(snake, " toSnakeCase");
+}
+
+toSnakeCase("Danger noodle");
+
+function fromSnakeToCamel(s) {
+    const snakeCambel = s.replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+
+    console.log(snakeCambel, " fromSnakeToCamel");
+}
+
+fromSnakeToCamel("danger_noodle");
+
+function fromCamelToSnake(s) {
+    const camleSnake = s.replace(/[A-Z]/g, (c) => { return '_' + c.toLowerCase() });
+
+    console.log(camleSnake, " fromCamelToSnake");
+}
+
+fromCamelToSnake("goodDay");
