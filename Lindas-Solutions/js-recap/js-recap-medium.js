@@ -118,4 +118,13 @@ function tail(arr, n) {
 }
 
 head([6, 7, 8, 10, 11, 5], 4);
-tail([6, 7, 8, 10, 11, 5], 3); 
+tail([6, 7, 8, 10, 11, 5], 3);
+
+// Initial
+
+function initial(arr) {
+    const ini = arr.slice(0, -1);
+    console.log(ini, " Initial"); 
+}
+
+initial([6, 7, 8, 9]); 
