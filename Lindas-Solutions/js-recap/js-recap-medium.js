@@ -259,4 +259,68 @@ function powers(arr, n) {
 }
 
 powers([2, 3, 4], 2);
-powers([1, 2, 3], 3); 
+powers([1, 2, 3], 3);
+
+// Range
+
+function range(a, b) {
+    const ran = [...Array(b - a + 1).keys()].map(i => i + a);
+    console.log(ran, " Range");
+}
+
+range(5, 10);
+
+function sum(arr) {
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return console.log(sum, " Sum");
+}
+
+sum([1, 2, 3]);
+
+function rangeSum(a, b) {
+    const arr = [...Array(b - a + 1).keys()].map(i => i + a);
+    console.log(arr, " this is arr");
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return console.log(sum, " RangeSum");
+}
+
+rangeSum(5, 10);
+
+// Remove numbers
+
+function removeNumbers(arr) {
+    let numbersOnly = (val) => {
+        if (typeof (val) !== 'number') {
+            return val;
+        }
+    }
+
+    let numbers = arr.filter(numbersOnly);
+    console.log(numbers, " testing ");
+}
+
+removeNumbers(["pineapple", "10", 7, 100, "strawberry"]);
+
+// Replace
+
+function replace(str, key, rstr) {
+    const word = str.trim().split(key).join(rstr);
+    console.log(word, " Replace");
+}
+
+replace("Banana", "a", "ö");
+
+// Reverse string 
+
+function reverseString(str) {
+    const bk = str.split("").reverse().join("");
+    console.log(bk, " Reverse string");
+}
+
+reverseString("Ryan");
