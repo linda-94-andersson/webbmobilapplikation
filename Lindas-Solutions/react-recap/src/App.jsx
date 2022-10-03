@@ -4,8 +4,9 @@ import Calculator from "./components/Calculator";
 import Aapp from "./components/PropsPassing/Aapp";
 import PrimeNumbers from "./components/PrimeNumbers/PrimeNumbers";
 import Feedback from "./components/Feedback";
-import "./App.css";
 import Quotes from "./components/Quotes";
+import Course from "./components/Course/Course";
+import "./App.css";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
       </span>
       <span style={{ margin: 30 }}>
         <Quotes />
+      </span>
+      <span style={{ margin: 30 }}>
+        <Course />
       </span>
     </div>
   );
