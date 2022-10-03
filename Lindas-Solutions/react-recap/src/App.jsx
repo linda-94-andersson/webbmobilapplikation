@@ -5,6 +5,7 @@ import Aapp from "./components/PropsPassing/Aapp";
 import PrimeNumbers from "./components/PrimeNumbers/PrimeNumbers";
 import Feedback from "./components/Feedback";
 import "./App.css";
+import Quotes from "./components/Quotes";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
       </span>
       <span style={{ margin: 30 }}>
         <Feedback />
+      </span>
+      <span style={{ margin: 30 }}>
+        <Quotes />
       </span>
     </div>
   );

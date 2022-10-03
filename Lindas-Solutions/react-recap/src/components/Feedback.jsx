@@ -25,7 +25,7 @@ function Feedback() {
     const totalAmount = countBra + countOk + countBad;
     const totalPositiva = countBra + countOk;
 
-    const positiva = Math.round((totalPositiva/totalAmount)*100);
+    const positiva = Math.round((totalPositiva / totalAmount) * 100);
     return positiva;
   }
 
@@ -53,14 +53,38 @@ function Feedback() {
         Dåligt
       </button>
       <div>
-        <span style={{ margin: 10 }}>{`Bra: ${countBra}`}</span>
-        <span style={{ margin: 10 }}>{`Helt ok: ${countOk}`}</span>
-        <span style={{ margin: 10 }}>{`Dåligt: ${countBad}`}</span>
+        <span style={{ margin: 10 }}>
+          {!countBra
+            ? "Bra: Ingen feedback mottagen ännu."
+            : `Bra: ${countBra}`}
+        </span>
+        <span style={{ margin: 10 }}>
+          {!countOk
+            ? "Helt ok: Ingen feedback mottagen ännu."
+            : `Helt ok: ${countOk}`}
+        </span>
+        <span style={{ margin: 10 }}>
+          {!countBad
+            ? "Dåligt: Ingen feedback mottagen ännu."
+            : `Dåligt: ${countBad}`}
+        </span>
       </div>
       <div>
-        <span style={{ margin: 10 }}>{`Totalt: ${total()}`}</span>
-        <span style={{ margin: 10 }}>{`Snitt: ${snitt()}`}</span>
-        <span style={{ margin: 10 }}>{`Positiva: ${positiva()}%`}</span>
+        <span style={{ margin: 10 }}>
+          {!countBra && !countOk && !countBad
+            ? "Totalt: Ingen feedback mottagen ännu."
+            : `Totalt: ${total()}`}
+        </span>
+        <span style={{ margin: 10 }}>
+          {!countBra && !countBad
+            ? "Snitt: Ingen feedback mottagen ännu."
+            : `Snitt: ${snitt()}`}
+        </span>
+        <span style={{ margin: 10 }}>
+          {!countBra && !countOk && !countBad
+            ? "Positiva: Ingen feedback mottagen ännu."
+            : `Positiva: ${positiva()}%`}
+        </span>
       </div>
     </div>
   );
