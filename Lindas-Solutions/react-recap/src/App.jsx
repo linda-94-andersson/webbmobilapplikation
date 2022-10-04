@@ -8,6 +8,7 @@ import Quotes from "./components/Quotes";
 import Course from "./components/Course/Course";
 import A_counter from "./components/A_counter/A_counter";
 import "./App.css";
+import Table from "./components/Table/Table";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
       </span>
       <span style={{ margin: 30 }}>
         <A_counter />
+      </span>
+      <span style={{ margin: 30 }}>
+        <Table />
       </span>
     </div>
   );
