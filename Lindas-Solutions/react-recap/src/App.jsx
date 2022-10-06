@@ -9,6 +9,7 @@ import Course from "./components/Course/Course";
 import A_counter from "./components/A_counter/A_counter";
 import "./App.css";
 import Table from "./components/Table/Table";
+import Beer from "./components/Beer_table/Beer";
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
       </span>
       <span style={{ margin: 30 }}>
         <Table />
+      </span>
+      <span style={{ margin: 30 }}>
+        <Beer />
       </span>
     </div>
   );
