@@ -10,6 +10,8 @@ import A_counter from "./components/A_counter/A_counter";
 import "./App.css";
 import Table from "./components/Table/Table";
 import Beer from "./components/Beer_table/Beer";
+import PhoneBook from "./components/PhoneBook/PhoneBook";
+import InputValidation from "./components/InputValidation";
 
 function App() {
   return (
@@ -43,6 +45,12 @@ function App() {
       </span>
       <span style={{ margin: 30 }}>
         <Beer />
+      </span>
+      <span style={{ margin: 30 }}>
+        <InputValidation />
+      </span>
+      <span style={{ margin: 30 }}>
+        <PhoneBook />
       </span>
     </div>
   );
