@@ -1,4 +1,6 @@
 import React, { useState, useCallback } from "react";
+import axios from "axios";
+import { useEffect } from "react";
 
 function PhoneBook() {
   const [people, setPeople] = useState([
@@ -6,6 +8,10 @@ function PhoneBook() {
   ]);
   const [input, setInput] = useState({ name: "", phone: "" });
   const [error, setError] = useState({ name: "", phone: "" });
+
+  useEffect(() => {
+    getPerson();
+  }, []);
 
   const handleInputChange = useCallback(({ target }) => {
     const { name, value } = target;
@@ -50,6 +56,13 @@ function PhoneBook() {
               : "Det finns redan en person med det telefonnumret.",
         });
       }
+      const addPerson = async () => {
+        const res = await axios.post(`http://localhost:3000/people`, {
+          name: input.name,
+          phone: input.phone,
+        });
+      };
+      addPerson();
       setPeople([...people, { ...input }]);
       setInput({ name: "", phone: "" });
     },
@@ -58,6 +71,11 @@ function PhoneBook() {
 
   const ErrorMsg = ({ message }) => {
     return !message ? null : <code>{message}</code>;
+  };
+
+  const getPerson = async () => {
+    const { data } = await axios.get(`http://localhost:3000/people`);
+    setPeople(data);
   };
 
   return (
@@ -81,7 +99,7 @@ function PhoneBook() {
         <ErrorMsg message={error.phone} />
         <div>
           <input
-            // required
+            required
             name="phone"
             autoComplete="off"
             type="number"
@@ -98,7 +116,7 @@ function PhoneBook() {
       </form>
       <div>
         <h3>People</h3>
-        <table style={{ marginLeft: "40vw" }}>
+        <table>
           <thead>
             <tr>
               <th>Name</th>

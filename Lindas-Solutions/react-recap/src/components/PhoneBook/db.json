@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "people": [
+    {
+      "id": 1,
+      "name": "Ryan Dahl",
+      "phone": "0701234567"
+    },
+    {
+      "name": "Linda",
+      "phone": "0762960633",
+      "id": 2
+    },
+    {
+      "name": "Linda Andersson",
+      "phone": "0792960633",
+      "id": 3
+    },
+    {
+      "name": "Axel",
+      "phone": "0732960633",
+      "id": 4
+    }
+  ]
+}
